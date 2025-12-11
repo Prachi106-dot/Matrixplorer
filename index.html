@@ -691,7 +691,7 @@
     </div>
 
     <script>
-        // Page navigation
+        // Page navigation - FIXED VERSION
         const page1Btn = document.getElementById('page1-btn');
         const page2Btn = document.getElementById('page2-btn');
         const page3Btn = document.getElementById('page3-btn');
@@ -699,31 +699,28 @@
         const page2 = document.getElementById('page2');
         const page3 = document.getElementById('page3');
         
-        page1Btn.addEventListener('click', () => {
-            page1.classList.add('active');
+        // Function to switch pages
+        function switchPage(pageToShow, buttonToActivate) {
+            // Hide all pages
+            page1.classList.remove('active');
             page2.classList.remove('active');
             page3.classList.remove('active');
-            page1Btn.classList.add('active');
+            
+            // Remove active class from all buttons
+            page1Btn.classList.remove('active');
             page2Btn.classList.remove('active');
             page3Btn.classList.remove('active');
-        });
+            
+            // Show the selected page and activate its button
+            pageToShow.classList.add('active');
+            buttonToActivate.classList.add('active');
+        }
         
-        page2Btn.addEventListener('click', () => {
-            page1.classList.remove('active');
-            page2.classList.add('active');
-            page3.classList.remove('active');
-            page1Btn.classList.remove('active');
-            page2Btn.classList.add('active');
-            page3Btn.classList.remove('active');
-        });
-        
+        // Add event listeners to navigation buttons
+        page1Btn.addEventListener('click', () => switchPage(page1, page1Btn));
+        page2Btn.addEventListener('click', () => switchPage(page2, page2Btn));
         page3Btn.addEventListener('click', () => {
-            page1.classList.remove('active');
-            page2.classList.remove('active');
-            page3.classList.add('active');
-            page1Btn.classList.remove('active');
-            page2Btn.classList.remove('active');
-            page3Btn.classList.add('active');
+            switchPage(page3, page3Btn);
             updateReviewStats();
         });
         
@@ -918,5 +915,4 @@
                 steps.push({
                     number: 5,
                     title: "Apply orthogonal condition",
-                    content: `Original differential equation: dy/dx = x/y\n\nReplace dy/dx with -1/(dy/dx):\n\n-1/(dy/dx) = x/y\n\nMultiply both sides by -1:\n1/(dy/dx) = -x/y\n\nTake
-
+                    content: `Original differential equation: dy/dx = x/y\n\nReplace dy/dx with -1/(dy/dx):\n\n-1/(dy/dx) = x/y\n\nMultiply both sides by -1:\n1/(dy/dx) = -x/y\n\nTake reciprocal:\
