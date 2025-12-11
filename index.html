@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Orthogonal Trajectories Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        canvas {
+            border: 1px solid #000;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Orthogonal Trajectories Visualization</h2>
+<p>Blue curves = first family of curves<br>Red curves = orthogonal trajectories</p>
+
+<canvas id="plot" width="600" height="600"></canvas>
+
+<script>
+// Canvas setup
+const canvas = document.getElementById("plot");
+const ctx = canvas.getContext("2d");
+
+const W = canvas.width;
+const H = canvas.height;
+
+// Coordinate transform
+function toCanvasX(x) { return W/2 + x; }
+function toCanvasY(y) { return H/2 - y; }
+
+// Draw curve given a function y(x)
+function drawCurve(func, color) {
+    ctx.strokeStyle = color;
+    ctx.lineWidth = 1.5;
+    ctx.beginPath();
+
+    let started = false;
+
+    for (let x = -250; x <= 250; x += 1) {
+        let y = func(x);
+        if (isNaN(y) || Math.abs(y) > 500) continue;
+
+        if (!started) {
+            ctx.moveTo(toCanvasX(x), toCanvasY(y));
+            started = true;
+        } else {
+            ctx.lineTo(toCanvasX(x), toCanvasY(y));
+        }
+    }
+    ctx.stroke();
+}
+
+// Example Family 1: y = k/x (hyperbolas)
+for (let k = -200; k <= 200; k += 50) {
+    if (k === 0) continue;
+    drawCurve(x => k / x, "blue");
+}
+
+// Orthogonal Trajectories: x² + y² = C (circles)
+function drawCircle(r) {
+    ctx.strokeStyle = "red";
+    ctx.lineWidth = 1.5;
+    ctx.beginPath();
+    for (let t = 0; t < Math.PI * 2; t += 0.01) {
+        let x = r * Math.cos(t);
+        let y = r * Math.sin(t);
+        ctx.lineTo(toCanvasX(x), toCanvasY(y));
+    }
+    ctx.stroke();
+}
+
+for (let r = 30; r <= 250; r += 40) {
+    drawCircle(r);
+}
+
+</script>
+
+</body>
+</html> 
 
