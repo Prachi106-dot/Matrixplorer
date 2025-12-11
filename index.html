@@ -838,13 +838,44 @@
     </div>
 
     <script>
-        // Page navigation
+        // Page navigation - FIXED
         const page1Btn = document.getElementById('page1-btn');
         const page2Btn = document.getElementById('page2-btn');
         const page3Btn = document.getElementById('page3-btn');
         const page1 = document.getElementById('page1');
         const page2 = document.getElementById('page2');
         const page3 = document.getElementById('page3');
+        
+        // Function to switch between pages
+        function showPage(pageId) {
+            // Hide all pages
+            page1.classList.remove('active');
+            page2.classList.remove('active');
+            page3.classList.remove('active');
+            
+            // Remove active class from all buttons
+            page1Btn.classList.remove('active');
+            page2Btn.classList.remove('active');
+            page3Btn.classList.remove('active');
+            
+            // Show the selected page
+            if (pageId === 'page1') {
+                page1.classList.add('active');
+                page1Btn.classList.add('active');
+            } else if (pageId === 'page2') {
+                page2.classList.add('active');
+                page2Btn.classList.add('active');
+            } else if (pageId === 'page3') {
+                page3.classList.add('active');
+                page3Btn.classList.add('active');
+                loadReviews(); // Load reviews when page 3 is shown
+            }
+        }
+        
+        // Add event listeners to navigation buttons
+        page1Btn.addEventListener('click', () => showPage('page1'));
+        page2Btn.addEventListener('click', () => showPage('page2'));
+        page3Btn.addEventListener('click', () => showPage('page3'));
         
         // Initialize with sample reviews
         let reviews = [
@@ -874,33 +905,6 @@
             }
         ];
         
-        // Function to switch pages
-        function switchPage(pageToShow, buttonToActivate) {
-            // Hide all pages
-            page1.classList.remove('active');
-            page2.classList.remove('active');
-            page3.classList.remove('active');
-            
-            // Remove active class from all buttons
-            page1Btn.classList.remove('active');
-            page2Btn.classList.remove('active');
-            page3Btn.classList.remove('active');
-            
-            // Show the selected page and activate its button
-            pageToShow.classList.add('active');
-            buttonToActivate.classList.add('active');
-            
-            // If switching to review page, update reviews
-            if (pageToShow === page3) {
-                loadReviews();
-            }
-        }
-        
-        // Add event listeners to navigation buttons
-        page1Btn.addEventListener('click', () => switchPage(page1, page1Btn));
-        page2Btn.addEventListener('click', () => switchPage(page2, page2Btn));
-        page3Btn.addEventListener('click', () => switchPage(page3, page3Btn));
-        
         // Example equation buttons
         const exampleBtns = document.querySelectorAll('.example-btn');
         const equationInput = document.getElementById('equation-input');
@@ -909,7 +913,7 @@
             btn.addEventListener('click', () => {
                 equationInput.value = btn.getAttribute('data-eq');
                 // Auto-switch to solver page when example is clicked
-                switchPage(page2, page2Btn);
+                showPage('page2');
             });
         });
         
@@ -923,9 +927,6 @@
             const name = document.getElementById('contact-name').value;
             const email = document.getElementById('contact-email').value;
             const message = document.getElementById('contact-message').value;
-            
-            // In a real application, you would send this data to a server
-            console.log('Contact form submitted:', { name, email, message });
             
             // Show success message
             contactSuccess.style.display = 'block';
@@ -1026,4 +1027,4 @@
                         <div class="review-date">${review.date}</div>
                     </div>
                     <div class="review-stars">${starsHtml} (${review.rating}/5)</div>
-                    <div class="review-text">${
+                    <div class="review-text">
