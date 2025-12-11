@@ -15,7 +15,7 @@
         }
         
         body {
-            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
             color: #f1f1f1;
             min-height: 100vh;
             padding: 20px;
@@ -26,12 +26,12 @@
             margin: 0 auto;
             background-color: rgba(255, 255, 255, 0.05);
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             overflow: hidden;
         }
         
         header {
-            background: linear-gradient(to right, #1a2980, #26d0ce);
+            background: linear-gradient(to right, #0f3460, #533483);
             padding: 20px 30px;
             display: flex;
             justify-content: space-between;
@@ -47,7 +47,7 @@
         }
         
         .logo i {
-            color: #FFD700;
+            color: #4cc9f0;
         }
         
         .nav-buttons {
@@ -56,7 +56,7 @@
         }
         
         .nav-btn {
-            background-color: rgba(255, 255, 255, 0.15);
+            background-color: rgba(255, 255, 255, 0.1);
             border: none;
             color: white;
             padding: 10px 20px;
@@ -67,13 +67,13 @@
         }
         
         .nav-btn:hover {
-            background-color: rgba(255, 255, 255, 0.25);
+            background-color: rgba(255, 255, 255, 0.2);
             transform: translateY(-2px);
         }
         
         .nav-btn.active {
-            background-color: #FFD700;
-            color: #1a2980;
+            background-color: #4cc9f0;
+            color: #16213e;
         }
         
         .page {
@@ -87,8 +87,8 @@
         
         .page-title {
             margin-bottom: 25px;
-            color: #26d0ce;
-            border-bottom: 2px solid #1a2980;
+            color: #4cc9f0;
+            border-bottom: 2px solid #533483;
             padding-bottom: 10px;
         }
         
@@ -98,12 +98,12 @@
             border-radius: 10px;
             padding: 25px;
             margin-bottom: 25px;
-            border-left: 5px solid #26d0ce;
+            border-left: 5px solid #4cc9f0;
         }
         
         .instruction-card h3 {
             margin-bottom: 15px;
-            color: #FFD700;
+            color: #f72585;
             display: flex;
             align-items: center;
             gap: 10px;
@@ -120,7 +120,7 @@
         }
         
         .example-box {
-            background-color: rgba(26, 41, 128, 0.3);
+            background-color: rgba(15, 52, 96, 0.3);
             border-radius: 8px;
             padding: 15px;
             margin-top: 15px;
@@ -154,24 +154,24 @@
             display: block;
             margin-bottom: 8px;
             font-weight: 600;
-            color: #26d0ce;
+            color: #4cc9f0;
         }
         
         .equation-input {
             width: 100%;
             padding: 15px;
             background-color: rgba(255, 255, 255, 0.1);
-            border: 1px solid #1a2980;
+            border: 1px solid #533483;
             border-radius: 8px;
             color: white;
             font-size: 1.1rem;
-            font-family: 'Courier New', monospace;
+            font-family: monospace;
         }
         
         .equation-input:focus {
             outline: none;
-            border-color: #26d0ce;
-            box-shadow: 0 0 0 2px rgba(38, 208, 206, 0.3);
+            border-color: #4cc9f0;
+            box-shadow: 0 0 0 2px rgba(76, 201, 240, 0.3);
         }
         
         .hint {
@@ -181,7 +181,7 @@
         }
         
         .solve-btn {
-            background: linear-gradient(to right, #FF416C, #FF4B2B);
+            background: linear-gradient(to right, #f72585, #b5179e);
             color: white;
             border: none;
             padding: 15px 30px;
@@ -195,7 +195,7 @@
         
         .solve-btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 7px 14px rgba(255, 65, 108, 0.4);
+            box-shadow: 0 7px 14px rgba(247, 37, 133, 0.4);
         }
         
         .solve-btn:active {
@@ -220,20 +220,20 @@
             border-radius: 8px;
             padding: 15px;
             margin-bottom: 15px;
-            border-left: 3px solid #FF416C;
+            border-left: 3px solid #f72585;
         }
         
         .step-title {
             font-weight: 600;
             margin-bottom: 8px;
-            color: #26d0ce;
+            color: #4cc9f0;
             display: flex;
             align-items: center;
             gap: 10px;
         }
         
         .step-number {
-            background-color: #FF416C;
+            background-color: #f72585;
             color: white;
             width: 30px;
             height: 30px;
@@ -245,18 +245,13 @@
         }
         
         .step-content {
-            font-family: 'Courier New', monospace;
+            font-family: monospace;
             white-space: pre-wrap;
             line-height: 1.5;
             background-color: rgba(0, 0, 0, 0.2);
             padding: 10px;
             border-radius: 5px;
             margin-top: 5px;
-        }
-        
-        .math-equation {
-            color: #FFD700;
-            font-weight: bold;
         }
         
         .example-equations {
@@ -267,9 +262,9 @@
         }
         
         .example-btn {
-            background-color: rgba(38, 208, 206, 0.2);
-            border: 1px solid #26d0ce;
-            color: #26d0ce;
+            background-color: rgba(76, 201, 240, 0.2);
+            border: 1px solid #4cc9f0;
+            color: #4cc9f0;
             padding: 8px 15px;
             border-radius: 50px;
             cursor: pointer;
@@ -277,7 +272,7 @@
         }
         
         .example-btn:hover {
-            background-color: rgba(38, 208, 206, 0.3);
+            background-color: rgba(76, 201, 240, 0.3);
         }
         
         /* Page 3 - Reviews */
@@ -340,7 +335,7 @@
             width: 100%;
             padding: 15px;
             background-color: rgba(255, 255, 255, 0.1);
-            border: 1px solid #1a2980;
+            border: 1px solid #533483;
             border-radius: 8px;
             color: white;
             font-size: 1rem;
@@ -350,11 +345,11 @@
         
         .form-group textarea:focus {
             outline: none;
-            border-color: #26d0ce;
+            border-color: #4cc9f0;
         }
         
         .submit-review-btn {
-            background: linear-gradient(to right, #1a2980, #26d0ce);
+            background: linear-gradient(to right, #0f3460, #4cc9f0);
             color: white;
             border: none;
             padding: 15px 30px;
@@ -368,7 +363,7 @@
         
         .submit-review-btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 7px 14px rgba(38, 208, 206, 0.4);
+            box-shadow: 0 7px 14px rgba(76, 201, 240, 0.4);
         }
         
         .review-item {
@@ -376,7 +371,7 @@
             border-radius: 8px;
             padding: 20px;
             margin-bottom: 20px;
-            border-left: 3px solid #FFD700;
+            border-left: 3px solid #4cc9f0;
         }
         
         .review-header {
@@ -388,7 +383,7 @@
         
         .reviewer-name {
             font-weight: 600;
-            color: #26d0ce;
+            color: #4cc9f0;
         }
         
         .review-date {
@@ -474,12 +469,12 @@
         }
         
         ::-webkit-scrollbar-thumb {
-            background: #1a2980;
+            background: #533483;
             border-radius: 10px;
         }
         
         ::-webkit-scrollbar-thumb:hover {
-            background: #26d0ce;
+            background: #4cc9f0;
         }
         
         .math-notation {
@@ -488,7 +483,7 @@
         }
         
         .derivative {
-            color: #FF416C;
+            color: #f72585;
         }
         
         .solution {
@@ -507,7 +502,7 @@
             <div class="nav-buttons">
                 <button class="nav-btn active" id="page1-btn">Instructions</button>
                 <button class="nav-btn" id="page2-btn">Equation Solver</button>
-                <button class="nav-btn" id="page3-btn">Reviews</button>
+                <button class="nav-btn" id="page3-btn">Share Experience</button>
             </div>
         </header>
         
@@ -517,7 +512,7 @@
             
             <div class="instruction-card">
                 <h3><i class="fas fa-info-circle"></i> What are Orthogonal Trajectories?</h3>
-                <p>Orthogonal trajectories are families of curves that intersect another family of curves at right angles (90°). Given a family of curves defined by <span class="math-notation">F(x, y, C) = 0</span>, the orthogonal trajectories are found by solving the differential equation obtained by replacing <span class="math-notation">dy/dx</span> with <span class="math-notation">-1/(dy/dx)</span>.</p>
+                <p>Orthogonal trajectories are families of curves that intersect another family of curves at right angles. Given a family of curves defined by <span class="math-notation">F(x, y, C) = 0</span>, the orthogonal trajectories are found by solving the differential equation obtained by replacing <span class="math-notation">dy/dx</span> with <span class="math-notation">-1/(dy/dx)</span>.</p>
             </div>
             
             <div class="instruction-card">
@@ -527,9 +522,9 @@
                     <li>Enter your equation in terms of x and y variables only. Use standard mathematical notation.</li>
                     <li>You can enter equations in these forms:
                         <ul>
-                            <li><strong>Explicit form</strong>: <span class="math-notation">y = f(x)</span></li>
-                            <li><strong>Implicit form</strong>: <span class="math-notation">f(x, y) = C</span></li>
-                            <li><strong>Differential form</strong>: <span class="math-notation">dy/dx = f(x, y)</span></li>
+                            <li>Explicit form: <span class="math-notation">y = f(x)</span></li>
+                            <li>Implicit form: <span class="math-notation">f(x, y) = C</span></li>
+                            <li>Differential form: <span class="math-notation">dy/dx = f(x, y)</span></li>
                         </ul>
                     </li>
                     <li>Click the <strong>Solve Orthogonal Trajectories</strong> button to get step-by-step solution.</li>
@@ -539,6 +534,389 @@
             
             <div class="instruction-card">
                 <h3><i class="fas fa-keyboard"></i> Equation Format Examples</h3>
-                <div class="example-box
+                <div class="example-box">
+                    <p><strong>Explicit form:</strong> y = x^2 + 3x - 5</p>
+                    <p><strong>Implicit form:</strong> x^2 + y^2 = C</p>
+                    <p><strong>Differential form:</strong> dy/dx = x/y</p>
+                    <p><strong>With trigonometric functions:</strong> y = sin(x) + cos(x)</p>
+                    <p><strong>With exponential functions:</strong> y = e^(2x) + 3</p>
+                </div>
+                <p class="hint">Note: Use ^ for exponentiation, * for multiplication, and / for division. Use parentheses to group expressions.</p>
+            </div>
+            
+            <div class="instruction-card">
+                <h3><i class="fas fa-lightbulb"></i> Tips for Best Results</h3>
+                <ul>
+                    <li>Make sure your equation only contains x and y variables (no other letters).</li>
+                    <li>For implicit forms, write the equation with "= C" where C is the constant.</li>
+                    <li>Use parentheses to clarify the order of operations: y = (x+1)/(x-1)</li>
+                    <li>Try the example equations on the solver page to see how it works.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Page 2: Equation Solver -->
+        <div class="page" id="page2">
+            <h1 class="page-title">Orthogonal Trajectories Solver</h1>
+            
+            <div class="solver-container">
+                <div class="input-section">
+                    <div class="form-group">
+                        <label for="equation-input">Enter Your Equation (in x and y only):</label>
+                        <input type="text" id="equation-input" class="equation-input" placeholder="e.g., y = x^2 + C or dy/dx = x/y or x^2 + y^2 = C">
+                        <p class="hint">You can enter explicit, implicit, or differential forms. Use ^ for exponents, * for multiplication.</p>
+                    </div>
+                    
+                    <div class="example-equations">
+                        <p style="width:100%; margin-bottom:10px; color:#4cc9f0;"><strong>Try these examples:</strong></p>
+                        <button class="example-btn" data-eq="x^2 + y^2 = C">x² + y² = C</button>
+                        <button class="example-btn" data-eq="y = C*x">y = Cx</button>
+                        <button class="example-btn" data-eq="dy/dx = x/y">dy/dx = x/y</button>
+                        <button class="example-btn" data-eq="y = C/x">y = C/x</button>
+                        <button class="example-btn" data-eq="y = C*e^x">y = Ce^x</button>
+                    </div>
+                    
+                    <button class="solve-btn" id="solve-btn">
+                        <i class="fas fa-calculator"></i> Solve Orthogonal Trajectories
+                    </button>
+                </div>
+                
+                <div class="output-section">
+                    <h3 style="margin-bottom: 15px; color: #f72585;">Solution Steps</h3>
+                    <div class="steps-container" id="steps-container">
+                        <div class="step">
+                            <div class="step-title"><div class="step-number">1</div> Enter an equation</div>
+                            <div class="step-content">Please enter an equation in the input field and click "Solve Orthogonal Trajectories" to see the step-by-step solution here.</div>
+                        </div>
+                    </div>
+                    
+                    <h3 style="margin-top: 30px; margin-bottom: 15px; color: #f72585;">Graph Visualization</h3>
+                    <div class="graph-container" id="graph-container">
+                        <!-- Graph will be displayed here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Page 3: Reviews -->
+        <div class="page" id="page3">
+            <h1 class="page-title">Share Your Experience</h1>
+            
+            <div class="review-container">
+                <div class="review-form">
+                    <h3 style="margin-bottom: 20px; color: #4cc9f0;">Rate Your Experience</h3>
+                    
+                    <div class="form-group">
+                        <label for="reviewer-name">Your Name:</label>
+                        <input type="text" id="reviewer-name" class="equation-input" placeholder="Enter your name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Your Rating:</label>
+                        <div class="star-rating">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5">★</label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4">★</label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3">★</label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2">★</label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1">★</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="review-text">Your Review:</label>
+                        <textarea id="review-text" placeholder="Share your experience using this tool..."></textarea>
+                    </div>
+                    
+                    <button class="submit-review-btn" id="submit-review-btn">
+                        <i class="fas fa-paper-plane"></i> Submit Review
+                    </button>
+                </div>
+                
+                <div class="review-list">
+                    <div class="review-stats">
+                        <div class="average-rating" id="average-rating">0.0</div>
+                        <div class="rating-breakdown">
+                            <div class="rating-bar">
+                                <div class="rating-label">5 stars</div>
+                                <div class="rating-bar-inner">
+                                    <div class="rating-bar-fill" id="rating-bar-5" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="rating-bar">
+                                <div class="rating-label">4 stars</div>
+                                <div class="rating-bar-inner">
+                                    <div class="rating-bar-fill" id="rating-bar-4" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="rating-bar">
+                                <div class="rating-label">3 stars</div>
+                                <div class="rating-bar-inner">
+                                    <div class="rating-bar-fill" id="rating-bar-3" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="rating-bar">
+                                <div class="rating-label">2 stars</div>
+                                <div class="rating-bar-inner">
+                                    <div class="rating-bar-fill" id="rating-bar-2" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="rating-bar">
+                                <div class="rating-label">1 star</div>
+                                <div class="rating-bar-inner">
+                                    <div class="rating-bar-fill" id="rating-bar-1" style="width: 0%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 style="margin-bottom: 20px; color: #4cc9f0;">Recent Reviews</h3>
+                    <div id="reviews-list">
+                        <div class="no-reviews">
+                            <i class="fas fa-comment-slash" style="font-size: 3rem; margin-bottom: 15px;"></i>
+                            <p>No reviews yet. Be the first to share your experience!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Orthogonal Trajectories Solver &copy; 2023 | Mathematical Tool for Solving Orthogonal Trajectories</p>
+        </footer>
+    </div>
 
+    <script>
+        // Page navigation
+        const page1Btn = document.getElementById('page1-btn');
+        const page2Btn = document.getElementById('page2-btn');
+        const page3Btn = document.getElementById('page3-btn');
+        const page1 = document.getElementById('page1');
+        const page2 = document.getElementById('page2');
+        const page3 = document.getElementById('page3');
+        
+        page1Btn.addEventListener('click', () => {
+            page1.classList.add('active');
+            page2.classList.remove('active');
+            page3.classList.remove('active');
+            page1Btn.classList.add('active');
+            page2Btn.classList.remove('active');
+            page3Btn.classList.remove('active');
+        });
+        
+        page2Btn.addEventListener('click', () => {
+            page1.classList.remove('active');
+            page2.classList.add('active');
+            page3.classList.remove('active');
+            page1Btn.classList.remove('active');
+            page2Btn.classList.add('active');
+            page3Btn.classList.remove('active');
+        });
+        
+        page3Btn.addEventListener('click', () => {
+            page1.classList.remove('active');
+            page2.classList.remove('active');
+            page3.classList.add('active');
+            page1Btn.classList.remove('active');
+            page2Btn.classList.remove('active');
+            page3Btn.classList.add('active');
+            updateReviewStats();
+        });
+        
+        // Example equation buttons
+        const exampleBtns = document.querySelectorAll('.example-btn');
+        const equationInput = document.getElementById('equation-input');
+        
+        exampleBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                equationInput.value = btn.getAttribute('data-eq');
+            });
+        });
+        
+        // Solve button functionality
+        const solveBtn = document.getElementById('solve-btn');
+        const stepsContainer = document.getElementById('steps-container');
+        const graphContainer = document.getElementById('graph-container');
+        
+        solveBtn.addEventListener('click', () => {
+            const equation = equationInput.value.trim();
+            if (!equation) {
+                alert('Please enter an equation.');
+                return;
+            }
+            
+            // Parse and solve the equation
+            const result = solveOrthogonalTrajectories(equation);
+            
+            // Display steps
+            displaySteps(result.steps);
+            
+            // Display graph
+            displayGraph(result.originalCurves, result.orthogonalCurves, equation);
+        });
+        
+        // Function to solve orthogonal trajectories with detailed steps
+        function solveOrthogonalTrajectories(equation) {
+            const steps = [];
+            let originalCurves = [];
+            let orthogonalCurves = [];
+            
+            // Step 1: Parse the equation
+            steps.push({
+                number: 1,
+                title: "Parse the input equation",
+                content: `Input equation: ${equation}\n\nWe begin by analyzing the equation format to determine how to proceed.`
+            });
+            
+            // Step 2: Identify the form and extract differential equation
+            let differentialEq = "";
+            let originalForm = "";
+            
+            if (equation.includes("dy/dx") || equation.includes("y'")) {
+                // Differential form
+                differentialEq = equation.replace("dy/dx", "dy/dx").replace("y'", "dy/dx");
+                originalForm = "differential";
+                steps.push({
+                    number: 2,
+                    title: "Identify equation form",
+                    content: `The equation is already in differential form:\n\n${differentialEq}\n\nWe can use it directly to find orthogonal trajectories.`
+                });
+            } else if (equation.includes("=")) {
+                // Explicit or implicit form
+                const parts = equation.split("=");
+                if (parts[0].includes("y") && !parts[0].includes("^") && parts[0].trim() === "y") {
+                    // Explicit form y = f(x)
+                    originalForm = "explicit";
+                    const fOfX = parts[1].trim();
+                    differentialEq = `dy/dx = d/dx(${fOfX})`;
+                    steps.push({
+                        number: 2,
+                        title: "Identify equation form",
+                        content: `The equation is in explicit form:\n\ny = ${fOfX}\n\nWe need to differentiate to find dy/dx.`
+                    });
+                    
+                    // Step 3: Differentiate
+                    let derivative = "";
+                    if (fOfX.includes("C*x")) {
+                        derivative = "C";
+                        steps.push({
+                            number: 3,
+                            title: "Differentiate with respect to x",
+                            content: `dy/dx = d/dx(${fOfX}) = ${derivative}\n\nSince C is a constant.`
+                        });
+                    } else if (fOfX.includes("C/x")) {
+                        derivative = "-C/x^2";
+                        steps.push({
+                            number: 3,
+                            title: "Differentiate with respect to x",
+                            content: `dy/dx = d/dx(${fOfX}) = ${derivative}\n\nUsing the power rule: d/dx(1/x) = -1/x²`
+                        });
+                    } else if (fOfX.includes("C*e^x")) {
+                        derivative = "C*e^x";
+                        steps.push({
+                            number: 3,
+                            title: "Differentiate with respect to x",
+                            content: `dy/dx = d/dx(${fOfX}) = ${derivative}\n\nSince d/dx(e^x) = e^x`
+                        });
+                    } else {
+                        derivative = "f'(x)";
+                        steps.push({
+                            number: 3,
+                            title: "Differentiate with respect to x",
+                            content: `dy/dx = d/dx(${fOfX}) = f'(x)\n\nThe derivative of the right-hand side with respect to x.`
+                        });
+                    }
+                    
+                    differentialEq = `dy/dx = ${derivative}`;
+                } else {
+                    // Implicit form
+                    originalForm = "implicit";
+                    steps.push({
+                        number: 2,
+                        title: "Identify equation form",
+                        content: `The equation is in implicit form:\n\n${equation}\n\nWe need to differentiate implicitly to find dy/dx.`
+                    });
+                    
+                    // For implicit form, we differentiate both sides
+                    let leftSide = parts[0].trim();
+                    let rightSide = parts[1].trim();
+                    
+                    // Step 3: Implicit differentiation
+                    if (leftSide.includes("x^2 + y^2") && rightSide === "C") {
+                        differentialEq = "dy/dx = -x/y";
+                        steps.push({
+                            number: 3,
+                            title: "Differentiate implicitly with respect to x",
+                            content: `Differentiate both sides of ${equation}:\n\nd/dx(x² + y²) = d/dx(C)\n\n2x + 2y(dy/dx) = 0\n\nSolve for dy/dx:\n2y(dy/dx) = -2x\n\ndy/dx = -x/y`
+                        });
+                    } else if (leftSide === "y" && rightSide.includes("C*x")) {
+                        // Actually explicit, but handle anyway
+                        differentialEq = "dy/dx = C";
+                        steps.push({
+                            number: 3,
+                            title: "Differentiate with respect to x",
+                            content: `From y = Cx:\n\ndy/dx = C\n\nBut from the original equation, C = y/x, so:\n\ndy/dx = y/x`
+                        });
+                        differentialEq = "dy/dx = y/x";
+                    } else if (leftSide === "y" && rightSide.includes("C/x")) {
+                        differentialEq = "dy/dx = -C/x^2";
+                        steps.push({
+                            number: 3,
+                            title: "Differentiate with respect to x",
+                            content: `From y = C/x:\n\ndy/dx = -C/x²\n\nBut from the original equation, C = xy, so:\n\ndy/dx = -xy/x² = -y/x`
+                        });
+                        differentialEq = "dy/dx = -y/x";
+                    } else {
+                        // Generic case
+                        differentialEq = "dy/dx = - (∂F/∂x) / (∂F/∂y)";
+                        steps.push({
+                            number: 3,
+                            title: "Differentiate implicitly with respect to x",
+                            content: `Using implicit differentiation:\n\n∂F/∂x + (∂F/∂y)(dy/dx) = 0\n\nSolving for dy/dx:\n\ndy/dx = - (∂F/∂x) / (∂F/∂y)`
+                        });
+                    }
+                }
+            }
+            
+            // Step 4: Find orthogonal trajectories condition
+            steps.push({
+                number: 4,
+                title: "Find orthogonal trajectories condition",
+                content: `For orthogonal trajectories, curves intersect at right angles.\n\nIf the slope of the original family is m = dy/dx,\nthen the slope of the orthogonal family is m_orthogonal = -1/m.\n\nSo we replace dy/dx with -1/(dy/dx) in the differential equation.`
+            });
+            
+            // Step 5: Apply the orthogonal condition
+            let orthogonalDiffEq = "";
+            
+            if (differentialEq.includes("dy/dx = -x/y")) {
+                orthogonalDiffEq = "dy/dx = y/x";
+                steps.push({
+                    number: 5,
+                    title: "Apply orthogonal condition",
+                    content: `Original differential equation: dy/dx = -x/y\n\nReplace dy/dx with -1/(dy/dx):\n\n-1/(dy/dx) = -x/y\n\nMultiply both sides by -1:\n1/(dy/dx) = x/y\n\nTake reciprocal:\ndy/dx = y/x\n\nSo the differential equation for orthogonal trajectories is:\n\ndy/dx = y/x`
+                });
+            } else if (differentialEq.includes("dy/dx = y/x")) {
+                orthogonalDiffEq = "dy/dx = -x/y";
+                steps.push({
+                    number: 5,
+                    title: "Apply orthogonal condition",
+                    content: `Original differential equation: dy/dx = y/x\n\nReplace dy/dx with -1/(dy/dx):\n\n-1/(dy/dx) = y/x\n\nMultiply both sides by -1:\n1/(dy/dx) = -y/x\n\nTake reciprocal:\ndy/dx = -x/y\n\nSo the differential equation for orthogonal trajectories is:\n\ndy/dx = -x/y`
+                });
+            } else if (differentialEq.includes("dy/dx = -y/x")) {
+                orthogonalDiffEq = "dy/dx = x/y";
+                steps.push({
+                    number: 5,
+                    title: "Apply orthogonal condition",
+                    content: `Original differential equation: dy/dx = -y/x\n\nReplace dy/dx with -1/(dy/dx):\n\n-1/(dy/dx) = -y/x\n\nMultiply both sides by -1:\n1/(dy/dx) = y/x\n\nTake reciprocal:\ndy/dx = x/y\n\nSo the differential equation for orthogonal trajectories is:\n\ndy/dx = x/y`
+                });
+            } else if (differentialEq.includes("dy/dx = x/y")) {
+                orthogonalDiffEq = "dy/dx = -y/x";
+                steps.push({
+                    number: 5,
+                    title: "Apply orthogonal condition",
+                    content: `Original differential equation: dy/dx = x/y\n\nReplace dy/dx with -1/(dy/dx):\n\n-1/(dy/dx) = x/y\n\nMultiply both sides by -1:\n1/(dy/dx) = -x/y\n\nTake
 
